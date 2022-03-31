@@ -1,0 +1,7 @@
+ use assignment
+switched to db assignment
+> show dbs
+admin       0.000GB
+assignment  0.000GB
+config      0.000GB
+local       0.000GB

@@ -1,0 +1,1833 @@
+ db.users.find().pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "id" : 1,
+        "movie_name" : "Air Bud",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "budget" : 13433
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "id" : 2,
+        "movie_name" : "Mind Game",
+        "movie_genre" : "Adventure|Animation|Comedy|Fantasy|Romance|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 9466
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "id" : 3,
+        "movie_name" : "The Adventures of André and Wally B.",
+        "movie_genre" : "Animation",
+        "production_year" : 1998,
+        "budget" : 16270
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "id" : 4,
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 12342
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "id" : 5,
+        "movie_name" : "American Pastime",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 16758
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "id" : 6,
+        "movie_name" : "Blue Max, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "production_year" : 2001,
+        "budget" : 11285
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "id" : 7,
+        "movie_name" : "Queens Logic",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1991,
+        "budget" : 11313
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "id" : 8,
+        "movie_name" : "The Hearts of Age",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2019,
+        "budget" : 13608
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "id" : 9,
+        "movie_name" : "Arizona Raiders",
+        "movie_genre" : "Western",
+        "production_year" : 2009,
+        "budget" : 11315
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "id" : 10,
+        "movie_name" : "What to Expect When You're Expecting",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2019,
+        "budget" : 18478
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "id" : 11,
+        "movie_name" : "Wrong Man, The",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : 17501
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "id" : 12,
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2018,
+        "budget" : 17989
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "id" : 13,
+        "movie_name" : "Walk Like a Man",
+        "movie_genre" : "Comedy",
+        "production_year" : 1994,
+        "budget" : 16080
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "id" : 14,
+        "movie_name" : "Little Fauss and Big Halsy",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 18219
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "id" : 15,
+        "movie_name" : "Now!",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : 12252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "id" : 16,
+        "movie_name" : "Narc",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2014,
+        "budget" : 14051
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "id" : 17,
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 9441
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "id" : 18,
+        "movie_name" : "Return to the Blue Lagoon",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 2003,
+        "budget" : 15025
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "id" : 19,
+        "movie_name" : "All In: The Poker Movie",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 13759
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "id" : 20,
+        "movie_name" : "If I Were King",
+        "movie_genre" : "Adventure",
+        "production_year" : 2008,
+        "budget" : 16499
+}
+Type "it" for more
+> db.users.find({movi:{$eq:pk}}).pretty()
+uncaught exception: ReferenceError: pk is not defined :
+@(shell):1:22
+> db.users.find({movi:{$eq:"pk"}}).pretty()
+> db.users.find({movi:{$eq:"All In: The Poker Movie"}}).pretty()
+> db.users.find({movie_name:{$eq:"All In: The Poker Movie"}}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "id" : 19,
+        "movie_name" : "All In: The Poker Movie",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 13759
+}
+> db.users.find({movie_name:{$ne:"All In: The Poker Movie"}}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "id" : 1,
+        "movie_name" : "Air Bud",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "budget" : 13433
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "id" : 2,
+        "movie_name" : "Mind Game",
+        "movie_genre" : "Adventure|Animation|Comedy|Fantasy|Romance|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 9466
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "id" : 3,
+        "movie_name" : "The Adventures of André and Wally B.",
+        "movie_genre" : "Animation",
+        "production_year" : 1998,
+        "budget" : 16270
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "id" : 4,
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 12342
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "id" : 5,
+        "movie_name" : "American Pastime",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 16758
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "id" : 6,
+        "movie_name" : "Blue Max, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "production_year" : 2001,
+        "budget" : 11285
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "id" : 7,
+        "movie_name" : "Queens Logic",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1991,
+        "budget" : 11313
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "id" : 8,
+        "movie_name" : "The Hearts of Age",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2019,
+        "budget" : 13608
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "id" : 9,
+        "movie_name" : "Arizona Raiders",
+        "movie_genre" : "Western",
+        "production_year" : 2009,
+        "budget" : 11315
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "id" : 10,
+        "movie_name" : "What to Expect When You're Expecting",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2019,
+        "budget" : 18478
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "id" : 11,
+        "movie_name" : "Wrong Man, The",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : 17501
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "id" : 12,
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2018,
+        "budget" : 17989
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "id" : 13,
+        "movie_name" : "Walk Like a Man",
+        "movie_genre" : "Comedy",
+        "production_year" : 1994,
+        "budget" : 16080
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "id" : 14,
+        "movie_name" : "Little Fauss and Big Halsy",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 18219
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "id" : 15,
+        "movie_name" : "Now!",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : 12252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "id" : 16,
+        "movie_name" : "Narc",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2014,
+        "budget" : 14051
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "id" : 17,
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 9441
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "id" : 18,
+        "movie_name" : "Return to the Blue Lagoon",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 2003,
+        "budget" : 15025
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "id" : 20,
+        "movie_name" : "If I Were King",
+        "movie_genre" : "Adventure",
+        "production_year" : 2008,
+        "budget" : 16499
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"),
+        "id" : 21,
+        "movie_name" : "American Kickboxer 2 (American Kickboxer 2: To the Death)",
+        "movie_genre" : "Action",
+        "production_year" : 2002,
+        "budget" : 15015
+}
+Type "it" for more
+> db.users.find({movie_name:{$ne:"All In: The Poker Movie"}},{movi_name:1,production_year:1}).pretty()
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e09"), "production_year" : 1990 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"), "production_year" : 2020 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"), "production_year" : 1998 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"), "production_year" : 1991 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"), "production_year" : 1995 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"), "production_year" : 2001 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"), "production_year" : 1991 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e10"), "production_year" : 2019 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e11"), "production_year" : 2009 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e12"), "production_year" : 2019 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e13"), "production_year" : 1993 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e14"), "production_year" : 2018 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e15"), "production_year" : 1994 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e16"), "production_year" : 2000 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e17"), "production_year" : 1995 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e18"), "production_year" : 2014 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e19"), "production_year" : 2008 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"), "production_year" : 2003 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"), "production_year" : 2008 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"), "production_year" : 2002 }
+Type "it" for more
+> db.users.find({movie_name:{$ne:"All In: The Poker Movie"}},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "movie_name" : "Air Bud",
+        "production_year" : 1990
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "movie_name" : "Mind Game",
+        "production_year" : 2020
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "movie_name" : "The Adventures of André and Wally B.",
+        "production_year" : 1998
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "production_year" : 1991
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "movie_name" : "American Pastime",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "movie_name" : "Blue Max, The",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "movie_name" : "Queens Logic",
+        "production_year" : 1991
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "movie_name" : "The Hearts of Age",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "movie_name" : "Arizona Raiders",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "movie_name" : "What to Expect When You're Expecting",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "movie_name" : "Wrong Man, The",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "movie_name" : "Walk Like a Man",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "movie_name" : "Little Fauss and Big Halsy",
+        "production_year" : 2000
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "movie_name" : "Now!",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "movie_name" : "Narc",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "movie_name" : "Return to the Blue Lagoon",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "movie_name" : "If I Were King",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"),
+        "movie_name" : "American Kickboxer 2 (American Kickboxer 2: To the Death)",
+        "production_year" : 2002
+}
+Type "it" for more
+> db.users.find({budget:{$get:10000}},{movi_name:1,production_year:1}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown operator: $get",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.users.find({budget:{$gte:10000}},{movi_name:1,production_year:1}).pretty()
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e09"), "production_year" : 1990 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"), "production_year" : 1998 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"), "production_year" : 1991 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"), "production_year" : 1995 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"), "production_year" : 2001 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"), "production_year" : 1991 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e10"), "production_year" : 2019 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e11"), "production_year" : 2009 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e12"), "production_year" : 2019 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e13"), "production_year" : 1993 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e14"), "production_year" : 2018 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e15"), "production_year" : 1994 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e16"), "production_year" : 2000 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e17"), "production_year" : 1995 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e18"), "production_year" : 2014 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"), "production_year" : 2003 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"), "production_year" : 2007 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"), "production_year" : 2008 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"), "production_year" : 2002 }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1e"), "production_year" : 1993 }
+Type "it" for more
+> db.users.find({budget:{$gte:10000}},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "movie_name" : "Air Bud",
+        "production_year" : 1990
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "movie_name" : "The Adventures of André and Wally B.",
+        "production_year" : 1998
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "production_year" : 1991
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "movie_name" : "American Pastime",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "movie_name" : "Blue Max, The",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "movie_name" : "Queens Logic",
+        "production_year" : 1991
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "movie_name" : "The Hearts of Age",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "movie_name" : "Arizona Raiders",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "movie_name" : "What to Expect When You're Expecting",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "movie_name" : "Wrong Man, The",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "movie_name" : "Walk Like a Man",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "movie_name" : "Little Fauss and Big Halsy",
+        "production_year" : 2000
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "movie_name" : "Now!",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "movie_name" : "Narc",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "movie_name" : "Return to the Blue Lagoon",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "movie_name" : "All In: The Poker Movie",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "movie_name" : "If I Were King",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"),
+        "movie_name" : "American Kickboxer 2 (American Kickboxer 2: To the Death)",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1e"),
+        "movie_name" : "Silent Night, Bloody Night",
+        "production_year" : 1993
+}
+Type "it" for more
+> db.users.find({budget:{$lte:10000}},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "movie_name" : "Mind Game",
+        "production_year" : 2020
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e60"),
+        "movie_name" : "Man from Elysian Fields, The",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e62"),
+        "movie_name" : "Madadayo (a.k.a. Not Yet)",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e6c"),
+        "movie_name" : "Toast of New Orleans, The",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e6e"),
+        "movie_name" : "ATL",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e72"),
+        "movie_name" : "Blame It on the Bellboy",
+        "production_year" : 2010
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e7f"),
+        "movie_name" : "Sunshine State",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e85"),
+        "movie_name" : "Maniac",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e93"),
+        "movie_name" : "Mole People, The",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ea6"),
+        "movie_name" : "Incruste, L' (a.k.a. L'Incruste, fallait pas le laisser entrer!)",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ea9"),
+        "movie_name" : "Defiance",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582eb6"),
+        "movie_name" : "Le créateur ",
+        "production_year" : 2017
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582eb7"),
+        "movie_name" : "Religulous",
+        "production_year" : 2012
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ec3"),
+        "movie_name" : "Whistling in Brooklyn",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ed9"),
+        "movie_name" : "Mask",
+        "production_year" : 2015
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ee5"),
+        "movie_name" : "I Always Wanted to Be a Gangster (J'ai toujours rêvé d'être un gangster)",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ee7"),
+        "movie_name" : "Babylon",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ef1"),
+        "movie_name" : "Reckless",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ef6"),
+        "movie_name" : "Snowman, The",
+        "production_year" : 2020
+}
+Type "it" for more
+> db.users.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "movie_name" : "Blue Max, The",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "movie_name" : "The Hearts of Age",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "movie_name" : "Arizona Raiders",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "movie_name" : "What to Expect When You're Expecting",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "movie_name" : "Narc",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "movie_name" : "Return to the Blue Lagoon",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "movie_name" : "All In: The Poker Movie",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "movie_name" : "If I Were King",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"),
+        "movie_name" : "American Kickboxer 2 (American Kickboxer 2: To the Death)",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1f"),
+        "movie_name" : "Quiet Man, The",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e21"),
+        "movie_name" : "Welcome to New York",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e22"),
+        "movie_name" : "Two Bits",
+        "production_year" : 2013
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e24"),
+        "movie_name" : "Come Sweet Death (Komm, süsser Tod)",
+        "production_year" : 2005
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e25"),
+        "movie_name" : "Dream Man",
+        "production_year" : 2016
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e26"),
+        "movie_name" : "Tormento",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e27"),
+        "movie_name" : "Casanova",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2a"),
+        "movie_name" : "All I Want for Christmas",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2b"),
+        "movie_name" : "I Want Candy",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2d"),
+        "movie_name" : "Everlasting Piece, An",
+        "production_year" : 2016
+}
+Type "it" for more
+> it
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2f"),
+        "movie_name" : "Mansome",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e31"),
+        "movie_name" : "Jumping the Broom",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e33"),
+        "movie_name" : "Visitors, The (Visiteurs, Les)",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e34"),
+        "movie_name" : "Luck, Trust & Ketchup: Robert Altman in Carver Country",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e35"),
+        "movie_name" : "Great Day in Harlem, A",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e36"),
+        "movie_name" : "Funeral Parade of Roses (Bara no sôretsu)",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e37"),
+        "movie_name" : "Three and Out (Deal Is a Deal, A)",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e39"),
+        "movie_name" : "The Hatchet Man",
+        "production_year" : 2012
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e3a"),
+        "movie_name" : "One-Eyed Monster",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e3c"),
+        "movie_name" : "Position Among The Stars (Stand van de Sterren)",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e3d"),
+        "movie_name" : "Lady Windermere's Fan",
+        "production_year" : 2012
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e3e"),
+        "movie_name" : "Results",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e40"),
+        "movie_name" : "Documentarian",
+        "production_year" : 2017
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e41"),
+        "movie_name" : "Arthur 2: On the Rocks",
+        "production_year" : 2016
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e43"),
+        "movie_name" : "Eight Men Out",
+        "production_year" : 2017
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e44"),
+        "movie_name" : "In Football We Trust",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e45"),
+        "movie_name" : "Contracted",
+        "production_year" : 2005
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e47"),
+        "movie_name" : "Loosies",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e48"),
+        "movie_name" : "Fire on the Mountain",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e49"),
+        "movie_name" : "Dead End",
+        "production_year" : 2003
+}
+Type "it" for more
+> it
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e4a"),
+        "movie_name" : "Traveller",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e4b"),
+        "movie_name" : "Ninja III: The Domination",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e4d"),
+        "movie_name" : "Shoot on Sight",
+        "production_year" : 2006
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e4e"),
+        "movie_name" : "Letter, The",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e52"),
+        "movie_name" : "Raw Deal",
+        "production_year" : 2011
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e53"),
+        "movie_name" : "Southland Tales",
+        "production_year" : 2004
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e54"),
+        "movie_name" : "Grace of My Heart",
+        "production_year" : 2020
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e56"),
+        "movie_name" : "Mothman Prophecies, The",
+        "production_year" : 2011
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e57"),
+        "movie_name" : "Numbskull Emptybrook in the Army (Uuno Turhapuro armeijan leivissä)",
+        "production_year" : 2016
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e59"),
+        "movie_name" : "Interiors",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e5a"),
+        "movie_name" : "Wake Island",
+        "production_year" : 2015
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e5b"),
+        "movie_name" : "World War Z",
+        "production_year" : 2005
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e5c"),
+        "movie_name" : "Kentucky Fried Movie, The",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e5d"),
+        "movie_name" : "Prefontaine",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e5e"),
+        "movie_name" : "Jealousy",
+        "production_year" : 2005
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e61"),
+        "movie_name" : "Summer of Fear",
+        "production_year" : 2011
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e64"),
+        "movie_name" : "Darkest Night",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e65"),
+        "movie_name" : "Mission Congo",
+        "production_year" : 2012
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e69"),
+        "movie_name" : "Taxi for Tobruk",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e6a"),
+        "movie_name" : "Southbounders",
+        "production_year" : 2020
+}
+Type "it" for more
+> db.users.find({$nor:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e6e"),
+        "movie_name" : "ATL",
+        "production_year" : 1994
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e85"),
+        "movie_name" : "Maniac",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ea6"),
+        "movie_name" : "Incruste, L' (a.k.a. L'Incruste, fallait pas le laisser entrer!)",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f17"),
+        "movie_name" : "Shine of Rainbows, A",
+        "production_year" : 1990
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f1e"),
+        "movie_name" : "Farinelli: il castrato",
+        "production_year" : 1990
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f26"),
+        "movie_name" : "One Way Boogie Woogie",
+        "production_year" : 1991
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f33"),
+        "movie_name" : "HazMat",
+        "production_year" : 1998
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f39"),
+        "movie_name" : "Meteor",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f41"),
+        "movie_name" : "Captains of the Clouds",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f62"),
+        "movie_name" : "Oedipus Rex (Edipo re)",
+        "production_year" : 1990
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f7a"),
+        "movie_name" : "More",
+        "production_year" : 2000
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f84"),
+        "movie_name" : "Unforgettable",
+        "production_year" : 2000
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f89"),
+        "movie_name" : "Sphere",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fc1"),
+        "movie_name" : "Someone I Loved (Je l'aimais)",
+        "production_year" : 1995
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fc6"),
+        "movie_name" : "Apart from You (After Our Separation) (Kimi to wakarete)",
+        "production_year" : 1993
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fcd"),
+        "movie_name" : "Scooby-Doo 2: Monsters Unleashed",
+        "production_year" : 1997
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fd1"),
+        "movie_name" : "Last Stand At Saber River",
+        "production_year" : 1997
+}
+> db.users.find({$nor:[{production_year:{$lte:2000}},{budget:{$lte:10000}}]},{movie_name:1,production_year:1}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "movie_name" : "Blue Max, The",
+        "production_year" : 2001
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "movie_name" : "The Hearts of Age",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "movie_name" : "Arizona Raiders",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "movie_name" : "What to Expect When You're Expecting",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "movie_name" : "Narc",
+        "production_year" : 2014
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "movie_name" : "Return to the Blue Lagoon",
+        "production_year" : 2003
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "movie_name" : "All In: The Poker Movie",
+        "production_year" : 2007
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "movie_name" : "If I Were King",
+        "production_year" : 2008
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1d"),
+        "movie_name" : "American Kickboxer 2 (American Kickboxer 2: To the Death)",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1f"),
+        "movie_name" : "Quiet Man, The",
+        "production_year" : 2002
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e21"),
+        "movie_name" : "Welcome to New York",
+        "production_year" : 2018
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e22"),
+        "movie_name" : "Two Bits",
+        "production_year" : 2013
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e24"),
+        "movie_name" : "Come Sweet Death (Komm, süsser Tod)",
+        "production_year" : 2005
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e25"),
+        "movie_name" : "Dream Man",
+        "production_year" : 2016
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e26"),
+        "movie_name" : "Tormento",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e27"),
+        "movie_name" : "Casanova",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2a"),
+        "movie_name" : "All I Want for Christmas",
+        "production_year" : 2019
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2b"),
+        "movie_name" : "I Want Candy",
+        "production_year" : 2009
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e2d"),
+        "movie_name" : "Everlasting Piece, An",
+        "production_year" : 2016
+}
+Type "it" for more
+> db.users.find({$nor:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]}).pretty()
+> db.users.find({$or:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "id" : 1,
+        "movie_name" : "Air Bud",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "budget" : 13433
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "id" : 2,
+        "movie_name" : "Mind Game",
+        "movie_genre" : "Adventure|Animation|Comedy|Fantasy|Romance|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 9466
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "id" : 3,
+        "movie_name" : "The Adventures of André and Wally B.",
+        "movie_genre" : "Animation",
+        "production_year" : 1998,
+        "budget" : 16270
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "id" : 4,
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 12342
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "id" : 5,
+        "movie_name" : "American Pastime",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 16758
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "id" : 6,
+        "movie_name" : "Blue Max, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "production_year" : 2001,
+        "budget" : 11285
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "id" : 7,
+        "movie_name" : "Queens Logic",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1991,
+        "budget" : 11313
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "id" : 8,
+        "movie_name" : "The Hearts of Age",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2019,
+        "budget" : 13608
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "id" : 9,
+        "movie_name" : "Arizona Raiders",
+        "movie_genre" : "Western",
+        "production_year" : 2009,
+        "budget" : 11315
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "id" : 10,
+        "movie_name" : "What to Expect When You're Expecting",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2019,
+        "budget" : 18478
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "id" : 11,
+        "movie_name" : "Wrong Man, The",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : 17501
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "id" : 12,
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2018,
+        "budget" : 17989
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "id" : 13,
+        "movie_name" : "Walk Like a Man",
+        "movie_genre" : "Comedy",
+        "production_year" : 1994,
+        "budget" : 16080
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "id" : 14,
+        "movie_name" : "Little Fauss and Big Halsy",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 18219
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "id" : 15,
+        "movie_name" : "Now!",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : 12252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "id" : 16,
+        "movie_name" : "Narc",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2014,
+        "budget" : 14051
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "id" : 17,
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 9441
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "id" : 18,
+        "movie_name" : "Return to the Blue Lagoon",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 2003,
+        "budget" : 15025
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "id" : 19,
+        "movie_name" : "All In: The Poker Movie",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 13759
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "id" : 20,
+        "movie_name" : "If I Were King",
+        "movie_genre" : "Adventure",
+        "production_year" : 2008,
+        "budget" : 16499
+}
+Type "it" for more
+> db.users.find({$nor:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]}).pretty()
+> db.users.find({$nor:[{production_year:{$gte:2000}},{budget:{$gte:10000}}]}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e6e"),
+        "id" : 102,
+        "movie_name" : "ATL",
+        "movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : 9252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e85"),
+        "id" : 125,
+        "movie_name" : "Maniac",
+        "movie_genre" : "Crime|Horror|Mystery|Romance|Thriller",
+        "production_year" : 1995,
+        "budget" : 9150
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582ea6"),
+        "id" : 158,
+        "movie_name" : "Incruste, L' (a.k.a. L'Incruste, fallait pas le laisser entrer!)",
+        "movie_genre" : "Comedy",
+        "production_year" : 1993,
+        "budget" : 9867
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f17"),
+        "id" : 271,
+        "movie_name" : "Shine of Rainbows, A",
+        "movie_genre" : "Drama",
+        "production_year" : 1990,
+        "budget" : 9024
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f1e"),
+        "id" : 278,
+        "movie_name" : "Farinelli: il castrato",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 1990,
+        "budget" : 9469
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f26"),
+        "id" : 286,
+        "movie_name" : "One Way Boogie Woogie",
+        "movie_genre" : "Documentary",
+        "production_year" : 1991,
+        "budget" : 9061
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f33"),
+        "id" : 299,
+        "movie_name" : "HazMat",
+        "movie_genre" : "Horror",
+        "production_year" : 1998,
+        "budget" : 9064
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f39"),
+        "id" : 305,
+        "movie_name" : "Meteor",
+        "movie_genre" : "Action|Drama|Sci-Fi",
+        "production_year" : 1993,
+        "budget" : 9947
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f41"),
+        "id" : 313,
+        "movie_name" : "Captains of the Clouds",
+        "movie_genre" : "Action|Drama|War",
+        "production_year" : 1993,
+        "budget" : 9612
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f62"),
+        "id" : 346,
+        "movie_name" : "Oedipus Rex (Edipo re)",
+        "movie_genre" : "Drama",
+        "production_year" : 1990,
+        "budget" : 9474
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582f89"),
+        "id" : 385,
+        "movie_name" : "Sphere",
+        "movie_genre" : "Sci-Fi|Thriller",
+        "production_year" : 1993,
+        "budget" : 9340
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fc1"),
+        "id" : 441,
+        "movie_name" : "Someone I Loved (Je l'aimais)",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 9804
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fc6"),
+        "id" : 446,
+        "movie_name" : "Apart from You (After Our Separation) (Kimi to wakarete)",
+        "movie_genre" : "Drama",
+        "production_year" : 1993,
+        "budget" : 9518
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fcd"),
+        "id" : 453,
+        "movie_name" : "Scooby-Doo 2: Monsters Unleashed",
+        "movie_genre" : "Action|Adventure|Children|Comedy|Mystery",
+        "production_year" : 1997,
+        "budget" : 9278
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582fd1"),
+        "id" : 457,
+        "movie_name" : "Last Stand At Saber River",
+        "movie_genre" : "Western",
+        "production_year" : 1997,
+        "budget" : 9384
+}
+> db.users.find({$or:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "id" : 1,
+        "movie_name" : "Air Bud",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "budget" : 13433
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "id" : 2,
+        "movie_name" : "Mind Game",
+        "movie_genre" : "Adventure|Animation|Comedy|Fantasy|Romance|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 9466
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "id" : 3,
+        "movie_name" : "The Adventures of André and Wally B.",
+        "movie_genre" : "Animation",
+        "production_year" : 1998,
+        "budget" : 16270
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "id" : 4,
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 12342
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "id" : 5,
+        "movie_name" : "American Pastime",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 16758
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "id" : 6,
+        "movie_name" : "Blue Max, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "production_year" : 2001,
+        "budget" : 11285
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "id" : 7,
+        "movie_name" : "Queens Logic",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1991,
+        "budget" : 11313
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "id" : 8,
+        "movie_name" : "The Hearts of Age",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2019,
+        "budget" : 13608
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "id" : 9,
+        "movie_name" : "Arizona Raiders",
+        "movie_genre" : "Western",
+        "production_year" : 2009,
+        "budget" : 11315
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "id" : 10,
+        "movie_name" : "What to Expect When You're Expecting",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2019,
+        "budget" : 18478
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "id" : 11,
+        "movie_name" : "Wrong Man, The",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : 17501
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "id" : 12,
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2018,
+        "budget" : 17989
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "id" : 13,
+        "movie_name" : "Walk Like a Man",
+        "movie_genre" : "Comedy",
+        "production_year" : 1994,
+        "budget" : 16080
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "id" : 14,
+        "movie_name" : "Little Fauss and Big Halsy",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 18219
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "id" : 15,
+        "movie_name" : "Now!",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : 12252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "id" : 16,
+        "movie_name" : "Narc",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2014,
+        "budget" : 14051
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "id" : 17,
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 9441
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "id" : 18,
+        "movie_name" : "Return to the Blue Lagoon",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 2003,
+        "budget" : 15025
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "id" : 19,
+        "movie_name" : "All In: The Poker Movie",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 13759
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "id" : 20,
+        "movie_name" : "If I Were King",
+        "movie_genre" : "Adventure",
+        "production_year" : 2008,
+        "budget" : 16499
+}
+Type "it" for more
+> db.users.find({$or:[{production_year:{$gte:2000}},{production_year:{$lte:2010}}]}).pretty()
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e09"),
+        "id" : 1,
+        "movie_name" : "Air Bud",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 1990,
+        "budget" : 13433
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0a"),
+        "id" : 2,
+        "movie_name" : "Mind Game",
+        "movie_genre" : "Adventure|Animation|Comedy|Fantasy|Romance|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 9466
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0b"),
+        "id" : 3,
+        "movie_name" : "The Adventures of André and Wally B.",
+        "movie_genre" : "Animation",
+        "production_year" : 1998,
+        "budget" : 16270
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0c"),
+        "id" : 4,
+        "movie_name" : "Trail of the Lonesome Pine, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1991,
+        "budget" : 12342
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0d"),
+        "id" : 5,
+        "movie_name" : "American Pastime",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1995,
+        "budget" : 16758
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0e"),
+        "id" : 6,
+        "movie_name" : "Blue Max, The",
+        "movie_genre" : "Adventure|Drama|War",
+        "production_year" : 2001,
+        "budget" : 11285
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e0f"),
+        "id" : 7,
+        "movie_name" : "Queens Logic",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1991,
+        "budget" : 11313
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e10"),
+        "id" : 8,
+        "movie_name" : "The Hearts of Age",
+        "movie_genre" : "(no genres listed)",
+        "production_year" : 2019,
+        "budget" : 13608
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e11"),
+        "id" : 9,
+        "movie_name" : "Arizona Raiders",
+        "movie_genre" : "Western",
+        "production_year" : 2009,
+        "budget" : 11315
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e12"),
+        "id" : 10,
+        "movie_name" : "What to Expect When You're Expecting",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2019,
+        "budget" : 18478
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e13"),
+        "id" : 11,
+        "movie_name" : "Wrong Man, The",
+        "movie_genre" : "Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : 17501
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e14"),
+        "id" : 12,
+        "movie_name" : "King of Devil's Island (Kongen av Bastøy) ",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2018,
+        "budget" : 17989
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e15"),
+        "id" : 13,
+        "movie_name" : "Walk Like a Man",
+        "movie_genre" : "Comedy",
+        "production_year" : 1994,
+        "budget" : 16080
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e16"),
+        "id" : 14,
+        "movie_name" : "Little Fauss and Big Halsy",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 18219
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e17"),
+        "id" : 15,
+        "movie_name" : "Now!",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : 12252
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e18"),
+        "id" : 16,
+        "movie_name" : "Narc",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2014,
+        "budget" : 14051
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e19"),
+        "id" : 17,
+        "movie_name" : "Marilyn Hotchkiss' Ballroom Dancing & Charm School",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2008,
+        "budget" : 9441
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1a"),
+        "id" : 18,
+        "movie_name" : "Return to the Blue Lagoon",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 2003,
+        "budget" : 15025
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1b"),
+        "id" : 19,
+        "movie_name" : "All In: The Poker Movie",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 13759
+}
+{
+        "_id" : ObjectId("61fe1fcbc78e2a6847582e1c"),
+        "id" : 20,
+        "movie_name" : "If I Were King",
+        "movie_genre" : "Adventure",
+        "production_year" : 2008,
+        "budget" : 16499
+}
+Type "it" for more
+> db.users.find({},{"Production_year":1,"Movie_name":1}).sort({Production_year:-1}).pretty()
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e09") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0a") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0b") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0c") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0d") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0e") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e0f") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e10") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e11") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e12") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e13") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e14") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e15") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e16") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e17") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e18") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e19") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1a") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1b") }
+{ "_id" : ObjectId("61fe1fcbc78e2a6847582e1c") }
+Type "it" for more
+
+
+
+
+
+
+
+
+
+
+
+
+
